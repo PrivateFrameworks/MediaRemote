@@ -1,0 +1,7 @@
+default_platform(:mac)
+
+platform :mac do
+	lane :test do
+		run_tests(scheme: "PrivateMediaRemote")
+	end
+end

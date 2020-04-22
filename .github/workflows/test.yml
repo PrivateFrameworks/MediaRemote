@@ -1,0 +1,23 @@
+name: Test
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: macos-10.15
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Xcode select
+      run: sudo xcode-select -s /Applications/Xcode_11.4.app
+
+    - name: Carthage install
+      run: |
+        carthage bootstrap --no-use-binaries --platform macOS
+
+    - name: Run tests
+      run: |
+        fastlane test
+
+    - uses: actions/upload-artifact@v1
+      with:
+        name: report.html
+        path: fastlane/test_output/report.html

@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E376AFA244EC051005528CF /* MediaRemote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E376AF9244EC051005528CF /* MediaRemote.framework */; };
+		6E376AFE244EC0CE005528CF /* PrivateMediaRemote.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E376AEE244EBF09005528CF /* PrivateMediaRemote.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E376B58244FC88B005528CF /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E376B57244FC88B005528CF /* Tests.m */; };
+		6E376B78244FFE55005528CF /* _MRNowPlayingClientProtobuf.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E376B76244FFE55005528CF /* _MRNowPlayingClientProtobuf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E376B79244FFE55005528CF /* _MRColorProtobuf.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E376B77244FFE55005528CF /* _MRColorProtobuf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E376B9024500DD6005528CF /* PrivateProtocolBuffer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E376B7E24500386005528CF /* PrivateProtocolBuffer.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6E376B9324500EBD005528CF /* MediaRemote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E376AF9244EC051005528CF /* MediaRemote.framework */; };
+		6E6BF6B124502AAB00702DE0 /* PrivateMediaRemote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E376AEB244EBF09005528CF /* PrivateMediaRemote.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6E376B5B244FC88B005528CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E376AE2244EBF09005528CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E376AEA244EBF09005528CF;
+			remoteInfo = PrivateMediaRemote;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6E376AEB244EBF09005528CF /* PrivateMediaRemote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PrivateMediaRemote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E376AEE244EBF09005528CF /* PrivateMediaRemote.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrivateMediaRemote.h; sourceTree = "<group>"; };
+		6E376AEF244EBF09005528CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E376AF9244EC051005528CF /* MediaRemote.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaRemote.framework; path = /System/Library/PrivateFrameworks/MediaRemote.framework; sourceTree = "<absolute>"; };
+		6E376B01244EC16D005528CF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		6E376B55244FC88B005528CF /* PrivateMediaRemoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrivateMediaRemoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E376B57244FC88B005528CF /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
+		6E376B59244FC88B005528CF /* TestsInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = TestsInfo.plist; path = Tests/TestsInfo.plist; sourceTree = "<group>"; };
+		6E376B71244FF153005528CF /* FastFile */ = {isa = PBXFileReference; lastKnownFileType = text; path = FastFile; sourceTree = "<group>"; };
+		6E376B73244FF15E005528CF /* test.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = test.yml; sourceTree = "<group>"; };
+		6E376B74244FF172005528CF /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		6E376B75244FF172005528CF /* Cartfile.resolved */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
+		6E376B76244FFE55005528CF /* _MRNowPlayingClientProtobuf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _MRNowPlayingClientProtobuf.h; sourceTree = "<group>"; };
+		6E376B77244FFE55005528CF /* _MRColorProtobuf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _MRColorProtobuf.h; sourceTree = "<group>"; };
+		6E376B7E24500386005528CF /* PrivateProtocolBuffer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PrivateProtocolBuffer.framework; path = Carthage/Build/Mac/PrivateProtocolBuffer.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E376AE8244EBF09005528CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E376B9024500DD6005528CF /* PrivateProtocolBuffer.framework in Frameworks */,
+				6E376AFA244EC051005528CF /* MediaRemote.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E376B52244FC88B005528CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E376B9324500EBD005528CF /* MediaRemote.framework in Frameworks */,
+				6E6BF6B124502AAB00702DE0 /* PrivateMediaRemote.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E376AE1244EBF09005528CF = {
+			isa = PBXGroup;
+			children = (
+				6E376B6E244FE70A005528CF /* Configuration */,
+				6E376AF8244EC051005528CF /* Frameworks */,
+				6E376AEC244EBF09005528CF /* Products */,
+				6E376B56244FC88B005528CF /* Tests */,
+				6E376B77244FFE55005528CF /* _MRColorProtobuf.h */,
+				6E376B76244FFE55005528CF /* _MRNowPlayingClientProtobuf.h */,
+				6E376AEE244EBF09005528CF /* PrivateMediaRemote.h */,
+			);
+			sourceTree = "<group>";
+		};
+		6E376AEC244EBF09005528CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E376AEB244EBF09005528CF /* PrivateMediaRemote.framework */,
+				6E376B55244FC88B005528CF /* PrivateMediaRemoteTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E376AF8244EC051005528CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E376AF9244EC051005528CF /* MediaRemote.framework */,
+				6E376B7E24500386005528CF /* PrivateProtocolBuffer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E376B56244FC88B005528CF /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6E376B57244FC88B005528CF /* Tests.m */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		6E376B6E244FE70A005528CF /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				6E376B6F244FE77E005528CF /* .github */,
+				6E376B70244FF153005528CF /* fastlane */,
+				6E376B01244EC16D005528CF /* .gitignore */,
+				6E376B74244FF172005528CF /* Cartfile */,
+				6E376B75244FF172005528CF /* Cartfile.resolved */,
+				6E376AEF244EBF09005528CF /* Info.plist */,
+				6E376B59244FC88B005528CF /* TestsInfo.plist */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		6E376B6F244FE77E005528CF /* .github */ = {
+			isa = PBXGroup;
+			children = (
+				6E376B72244FF15E005528CF /* workflows */,
+			);
+			path = .github;
+			sourceTree = "<group>";
+		};
+		6E376B70244FF153005528CF /* fastlane */ = {
+			isa = PBXGroup;
+			children = (
+				6E376B71244FF153005528CF /* FastFile */,
+			);
+			path = fastlane;
+			sourceTree = "<group>";
+		};
+		6E376B72244FF15E005528CF /* workflows */ = {
+			isa = PBXGroup;
+			children = (
+				6E376B73244FF15E005528CF /* test.yml */,
+			);
+			path = workflows;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6E376AE6244EBF09005528CF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E376B79244FFE55005528CF /* _MRColorProtobuf.h in Headers */,
+				6E376AFE244EC0CE005528CF /* PrivateMediaRemote.h in Headers */,
+				6E376B78244FFE55005528CF /* _MRNowPlayingClientProtobuf.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6E376AEA244EBF09005528CF /* PrivateMediaRemote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E376AF3244EBF09005528CF /* Build configuration list for PBXNativeTarget "PrivateMediaRemote" */;
+			buildPhases = (
+				6E376AE6244EBF09005528CF /* Headers */,
+				6E376AE7244EBF09005528CF /* Sources */,
+				6E376AE8244EBF09005528CF /* Frameworks */,
+				6E376AE9244EBF09005528CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PrivateMediaRemote;
+			productName = MediaRemote;
+			productReference = 6E376AEB244EBF09005528CF /* PrivateMediaRemote.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6E376B54244FC88B005528CF /* PrivateMediaRemoteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E376B5D244FC88B005528CF /* Build configuration list for PBXNativeTarget "PrivateMediaRemoteTests" */;
+			buildPhases = (
+				6E376B51244FC88B005528CF /* Sources */,
+				6E376B52244FC88B005528CF /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E376B5C244FC88B005528CF /* PBXTargetDependency */,
+			);
+			name = PrivateMediaRemoteTests;
+			productName = PrivateMediaRemoteTests;
+			productReference = 6E376B55244FC88B005528CF /* PrivateMediaRemoteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E376AE2244EBF09005528CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1140;
+				TargetAttributes = {
+					6E376AEA244EBF09005528CF = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					6E376B54244FC88B005528CF = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = 6E376AE5244EBF09005528CF /* Build configuration list for PBXProject "PrivateMediaRemote" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6E376AE1244EBF09005528CF;
+			productRefGroup = 6E376AEC244EBF09005528CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E376AEA244EBF09005528CF /* PrivateMediaRemote */,
+				6E376B54244FC88B005528CF /* PrivateMediaRemoteTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E376AE9244EBF09005528CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E376AE7244EBF09005528CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E376B51244FC88B005528CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E376B58244FC88B005528CF /* Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6E376B5C244FC88B005528CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E376AEA244EBF09005528CF /* PrivateMediaRemote */;
+			targetProxy = 6E376B5B244FC88B005528CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6E376AF1244EBF09005528CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6E376AF2244EBF09005528CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6E376AF4244EBF09005528CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = private.MediaRemote;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+			};
+			name = Debug;
+		};
+		6E376AF5244EBF09005528CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = private.MediaRemote;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+			};
+			name = Release;
+		};
+		6E376B5E244FC88B005528CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = Tests/TestsInfo.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = private.PrivateMediaRemoteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+			};
+			name = Debug;
+		};
+		6E376B5F244FC88B005528CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = Tests/TestsInfo.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = private.PrivateMediaRemoteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E376AE5244EBF09005528CF /* Build configuration list for PBXProject "PrivateMediaRemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E376AF1244EBF09005528CF /* Debug */,
+				6E376AF2244EBF09005528CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E376AF3244EBF09005528CF /* Build configuration list for PBXNativeTarget "PrivateMediaRemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E376AF4244EBF09005528CF /* Debug */,
+				6E376AF5244EBF09005528CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E376B5D244FC88B005528CF /* Build configuration list for PBXNativeTarget "PrivateMediaRemoteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E376B5E244FC88B005528CF /* Debug */,
+				6E376B5F244FC88B005528CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6E376AE2244EBF09005528CF /* Project object */;
+}
