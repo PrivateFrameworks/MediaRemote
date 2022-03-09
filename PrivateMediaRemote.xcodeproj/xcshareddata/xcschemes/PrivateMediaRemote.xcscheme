@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1140"
+   LastUpgradeVersion = "1320"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -20,6 +20,34 @@
                ReferencedContainer = "container:PrivateMediaRemote.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "6E376B54244FC88B005528CF"
+               BuildableName = "Tests With Linking.xctest"
+               BlueprintName = "Tests With Linking"
+               ReferencedContainer = "container:PrivateMediaRemote.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "6E78115727D7C6DC00539389"
+               BuildableName = "Tests Without Linking.xctest"
+               BlueprintName = "Tests Without Linking"
+               ReferencedContainer = "container:PrivateMediaRemote.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -33,8 +61,18 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6E376B54244FC88B005528CF"
-               BuildableName = "PrivateMediaRemoteTests.xctest"
-               BlueprintName = "PrivateMediaRemoteTests"
+               BuildableName = "Tests With Linking.xctest"
+               BlueprintName = "Tests With Linking"
+               ReferencedContainer = "container:PrivateMediaRemote.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "6E78115727D7C6DC00539389"
+               BuildableName = "Tests Without Linking.xctest"
+               BlueprintName = "Tests Without Linking"
                ReferencedContainer = "container:PrivateMediaRemote.xcodeproj">
             </BuildableReference>
          </TestableReference>

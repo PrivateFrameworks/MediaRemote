@@ -8,13 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		6E376AFA244EC051005528CF /* MediaRemote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E376AF9244EC051005528CF /* MediaRemote.framework */; };
-		6E376AFE244EC0CE005528CF /* PrivateMediaRemote.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E376AEE244EBF09005528CF /* PrivateMediaRemote.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6E376B58244FC88B005528CF /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E376B57244FC88B005528CF /* Tests.m */; };
 		6E376B78244FFE55005528CF /* _MRNowPlayingClientProtobuf.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E376B76244FFE55005528CF /* _MRNowPlayingClientProtobuf.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E376B79244FFE55005528CF /* _MRColorProtobuf.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E376B77244FFE55005528CF /* _MRColorProtobuf.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E376B9024500DD6005528CF /* PrivateProtocolBuffer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E376B7E24500386005528CF /* PrivateProtocolBuffer.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6E376B9324500EBD005528CF /* MediaRemote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E376AF9244EC051005528CF /* MediaRemote.framework */; };
 		6E6BF6B124502AAB00702DE0 /* PrivateMediaRemote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E376AEB244EBF09005528CF /* PrivateMediaRemote.framework */; };
+		6E78114C27D7BD3F00539389 /* Constants.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E78114B27D7BD3F00539389 /* Constants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E78114E27D7C20400539389 /* Enums.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E78114D27D7C20400539389 /* Enums.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E78115027D7C25D00539389 /* Functions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E78114F27D7C25D00539389 /* Functions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E78115127D7C3C300539389 /* PrivateMediaRemote.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E376AEE244EBF09005528CF /* PrivateMediaRemote.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E78115327D7C50100539389 /* PrivateMediaRemote.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E78115227D7C50100539389 /* PrivateMediaRemote.m */; };
+		6E78115C27D7C6DC00539389 /* PrivateMediaRemote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E376AEB244EBF09005528CF /* PrivateMediaRemote.framework */; };
+		6E78116627D8B81100539389 /* FoundationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E78115A27D7C6DC00539389 /* FoundationTests.m */; };
+		6E78116727D8C26200539389 /* FoundationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E78115A27D7C6DC00539389 /* FoundationTests.m */; };
+		6E78116927D8CB6A00539389 /* CoreFoundationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E78116827D8CB6A00539389 /* CoreFoundationTests.m */; };
+		6E78116A27D8CB6A00539389 /* CoreFoundationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E78116827D8CB6A00539389 /* CoreFoundationTests.m */; };
+		6E78116C27D8CD2B00539389 /* Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E78116B27D8CD2B00539389 /* Blocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,24 +34,39 @@
 			remoteGlobalIDString = 6E376AEA244EBF09005528CF;
 			remoteInfo = PrivateMediaRemote;
 		};
+		6E78115D27D7C6DC00539389 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E376AE2244EBF09005528CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E376AEA244EBF09005528CF;
+			remoteInfo = PrivateMediaRemote;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		6E376AEB244EBF09005528CF /* PrivateMediaRemote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PrivateMediaRemote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E376AEE244EBF09005528CF /* PrivateMediaRemote.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrivateMediaRemote.h; sourceTree = "<group>"; };
+		6E376AEE244EBF09005528CF /* PrivateMediaRemote.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrivateMediaRemote.h; sourceTree = "<group>"; usesTabs = 1; };
 		6E376AEF244EBF09005528CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E376AF9244EC051005528CF /* MediaRemote.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaRemote.framework; path = /System/Library/PrivateFrameworks/MediaRemote.framework; sourceTree = "<absolute>"; };
 		6E376B01244EC16D005528CF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		6E376B55244FC88B005528CF /* PrivateMediaRemoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrivateMediaRemoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E376B57244FC88B005528CF /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
-		6E376B59244FC88B005528CF /* TestsInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = TestsInfo.plist; path = Tests/TestsInfo.plist; sourceTree = "<group>"; };
-		6E376B71244FF153005528CF /* FastFile */ = {isa = PBXFileReference; lastKnownFileType = text; path = FastFile; sourceTree = "<group>"; };
-		6E376B73244FF15E005528CF /* test.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = test.yml; sourceTree = "<group>"; };
+		6E376B55244FC88B005528CF /* Tests With Linking.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests With Linking.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E376B71244FF153005528CF /* FastFile */ = {isa = PBXFileReference; lastKnownFileType = text; path = FastFile; sourceTree = "<group>"; usesTabs = 1; };
+		6E376B73244FF15E005528CF /* test.yml */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = text.yaml; path = test.yml; sourceTree = "<group>"; tabWidth = 2; };
 		6E376B74244FF172005528CF /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		6E376B75244FF172005528CF /* Cartfile.resolved */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
-		6E376B76244FFE55005528CF /* _MRNowPlayingClientProtobuf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _MRNowPlayingClientProtobuf.h; sourceTree = "<group>"; };
-		6E376B77244FFE55005528CF /* _MRColorProtobuf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _MRColorProtobuf.h; sourceTree = "<group>"; };
+		6E376B76244FFE55005528CF /* _MRNowPlayingClientProtobuf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _MRNowPlayingClientProtobuf.h; sourceTree = "<group>"; usesTabs = 1; };
+		6E376B77244FFE55005528CF /* _MRColorProtobuf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _MRColorProtobuf.h; sourceTree = "<group>"; usesTabs = 1; };
 		6E376B7E24500386005528CF /* PrivateProtocolBuffer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PrivateProtocolBuffer.framework; path = Carthage/Build/Mac/PrivateProtocolBuffer.framework; sourceTree = "<group>"; };
+		6E78114B27D7BD3F00539389 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; usesTabs = 1; };
+		6E78114D27D7C20400539389 /* Enums.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Enums.h; sourceTree = "<group>"; usesTabs = 1; };
+		6E78114F27D7C25D00539389 /* Functions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Functions.h; sourceTree = "<group>"; usesTabs = 1; };
+		6E78115227D7C50100539389 /* PrivateMediaRemote.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrivateMediaRemote.m; sourceTree = "<group>"; usesTabs = 1; };
+		6E78115827D7C6DC00539389 /* Tests Without Linking.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests Without Linking.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E78115A27D7C6DC00539389 /* FoundationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoundationTests.m; sourceTree = "<group>"; usesTabs = 1; };
+		6E78116227D7C94800539389 /* TestsInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TestsInfo.plist; sourceTree = "<group>"; };
+		6E78116527D8B77600539389 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; usesTabs = 1; };
+		6E78116827D8CB6A00539389 /* CoreFoundationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreFoundationTests.m; sourceTree = "<group>"; usesTabs = 1; };
+		6E78116B27D8CD2B00539389 /* Blocks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Blocks.h; sourceTree = "<group>"; usesTabs = 1; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +88,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6E78115527D7C6DC00539389 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E78115C27D7C6DC00539389 /* PrivateMediaRemote.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -74,9 +106,14 @@
 				6E376AF8244EC051005528CF /* Frameworks */,
 				6E376AEC244EBF09005528CF /* Products */,
 				6E376B56244FC88B005528CF /* Tests */,
+				6E376AEE244EBF09005528CF /* PrivateMediaRemote.h */,
+				6E78115227D7C50100539389 /* PrivateMediaRemote.m */,
+				6E78116B27D8CD2B00539389 /* Blocks.h */,
+				6E78114B27D7BD3F00539389 /* Constants.h */,
+				6E78114D27D7C20400539389 /* Enums.h */,
+				6E78114F27D7C25D00539389 /* Functions.h */,
 				6E376B77244FFE55005528CF /* _MRColorProtobuf.h */,
 				6E376B76244FFE55005528CF /* _MRNowPlayingClientProtobuf.h */,
-				6E376AEE244EBF09005528CF /* PrivateMediaRemote.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,7 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				6E376AEB244EBF09005528CF /* PrivateMediaRemote.framework */,
-				6E376B55244FC88B005528CF /* PrivateMediaRemoteTests.xctest */,
+				6E376B55244FC88B005528CF /* Tests With Linking.xctest */,
+				6E78115827D7C6DC00539389 /* Tests Without Linking.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,7 +139,9 @@
 		6E376B56244FC88B005528CF /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				6E376B57244FC88B005528CF /* Tests.m */,
+				6E78116827D8CB6A00539389 /* CoreFoundationTests.m */,
+				6E78115A27D7C6DC00539389 /* FoundationTests.m */,
+				6E78116527D8B77600539389 /* Common.h */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -115,7 +155,7 @@
 				6E376B74244FF172005528CF /* Cartfile */,
 				6E376B75244FF172005528CF /* Cartfile.resolved */,
 				6E376AEF244EBF09005528CF /* Info.plist */,
-				6E376B59244FC88B005528CF /* TestsInfo.plist */,
+				6E78116227D7C94800539389 /* TestsInfo.plist */,
 			);
 			name = Configuration;
 			sourceTree = "<group>";
@@ -151,8 +191,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E78115027D7C25D00539389 /* Functions.h in Headers */,
+				6E78116C27D8CD2B00539389 /* Blocks.h in Headers */,
 				6E376B79244FFE55005528CF /* _MRColorProtobuf.h in Headers */,
-				6E376AFE244EC0CE005528CF /* PrivateMediaRemote.h in Headers */,
+				6E78114C27D7BD3F00539389 /* Constants.h in Headers */,
+				6E78115127D7C3C300539389 /* PrivateMediaRemote.h in Headers */,
+				6E78114E27D7C20400539389 /* Enums.h in Headers */,
 				6E376B78244FFE55005528CF /* _MRNowPlayingClientProtobuf.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -178,9 +222,9 @@
 			productReference = 6E376AEB244EBF09005528CF /* PrivateMediaRemote.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		6E376B54244FC88B005528CF /* PrivateMediaRemoteTests */ = {
+		6E376B54244FC88B005528CF /* Tests With Linking */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6E376B5D244FC88B005528CF /* Build configuration list for PBXNativeTarget "PrivateMediaRemoteTests" */;
+			buildConfigurationList = 6E376B5D244FC88B005528CF /* Build configuration list for PBXNativeTarget "Tests With Linking" */;
 			buildPhases = (
 				6E376B51244FC88B005528CF /* Sources */,
 				6E376B52244FC88B005528CF /* Frameworks */,
@@ -190,9 +234,26 @@
 			dependencies = (
 				6E376B5C244FC88B005528CF /* PBXTargetDependency */,
 			);
-			name = PrivateMediaRemoteTests;
+			name = "Tests With Linking";
 			productName = PrivateMediaRemoteTests;
-			productReference = 6E376B55244FC88B005528CF /* PrivateMediaRemoteTests.xctest */;
+			productReference = 6E376B55244FC88B005528CF /* Tests With Linking.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6E78115727D7C6DC00539389 /* Tests Without Linking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E78115F27D7C6DC00539389 /* Build configuration list for PBXNativeTarget "Tests Without Linking" */;
+			buildPhases = (
+				6E78115427D7C6DC00539389 /* Sources */,
+				6E78115527D7C6DC00539389 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E78115E27D7C6DC00539389 /* PBXTargetDependency */,
+			);
+			name = "Tests Without Linking";
+			productName = "Unlinked Tests";
+			productReference = 6E78115827D7C6DC00539389 /* Tests Without Linking.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -201,13 +262,16 @@
 		6E376AE2244EBF09005528CF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					6E376AEA244EBF09005528CF = {
 						CreatedOnToolsVersion = 11.4;
 					};
 					6E376B54244FC88B005528CF = {
 						CreatedOnToolsVersion = 11.4;
+					};
+					6E78115727D7C6DC00539389 = {
+						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
@@ -225,7 +289,8 @@
 			projectRoot = "";
 			targets = (
 				6E376AEA244EBF09005528CF /* PrivateMediaRemote */,
-				6E376B54244FC88B005528CF /* PrivateMediaRemoteTests */,
+				6E376B54244FC88B005528CF /* Tests With Linking */,
+				6E78115727D7C6DC00539389 /* Tests Without Linking */,
 			);
 		};
 /* End PBXProject section */
@@ -245,6 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E78115327D7C50100539389 /* PrivateMediaRemote.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,7 +318,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E376B58244FC88B005528CF /* Tests.m in Sources */,
+				6E78116727D8C26200539389 /* FoundationTests.m in Sources */,
+				6E78116927D8CB6A00539389 /* CoreFoundationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E78115427D7C6DC00539389 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E78116627D8B81100539389 /* FoundationTests.m in Sources */,
+				6E78116A27D8CB6A00539389 /* CoreFoundationTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +339,11 @@
 			isa = PBXTargetDependency;
 			target = 6E376AEA244EBF09005528CF /* PrivateMediaRemote */;
 			targetProxy = 6E376B5B244FC88B005528CF /* PBXContainerItemProxy */;
+		};
+		6E78115E27D7C6DC00539389 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E376AEA244EBF09005528CF /* PrivateMediaRemote */;
+			targetProxy = 6E78115D27D7C6DC00539389 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -446,12 +527,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = Tests/TestsInfo.plist;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					LINKED_TESTS,
+				);
+				INFOPLIST_FILE = TestsInfo.plist;
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = private.PrivateMediaRemoteTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -466,13 +550,60 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = Tests/TestsInfo.plist;
+				GCC_PREPROCESSOR_DEFINITIONS = LINKED_TESTS;
+				INFOPLIST_FILE = TestsInfo.plist;
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = private.PrivateMediaRemoteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+			};
+			name = Release;
+		};
+		6E78116027D7C6DC00539389 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/Mac";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					UNLINKED_TESTS,
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/**";
+				INFOPLIST_FILE = TestsInfo.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = private.PrivateMediaRemoteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+			};
+			name = Debug;
+		};
+		6E78116127D7C6DC00539389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/Mac";
+				GCC_PREPROCESSOR_DEFINITIONS = UNLINKED_TESTS;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/**";
+				INFOPLIST_FILE = TestsInfo.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = private.PrivateMediaRemoteTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
@@ -503,11 +634,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6E376B5D244FC88B005528CF /* Build configuration list for PBXNativeTarget "PrivateMediaRemoteTests" */ = {
+		6E376B5D244FC88B005528CF /* Build configuration list for PBXNativeTarget "Tests With Linking" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6E376B5E244FC88B005528CF /* Debug */,
 				6E376B5F244FC88B005528CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E78115F27D7C6DC00539389 /* Build configuration list for PBXNativeTarget "Tests Without Linking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E78116027D7C6DC00539389 /* Debug */,
+				6E78116127D7C6DC00539389 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

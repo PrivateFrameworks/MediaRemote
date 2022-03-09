@@ -1,0 +1,25 @@
+#ifndef PrivateMediaRemote_Constants_h
+#define PrivateMediaRemote_Constants_h
+
+extern NSString *kMRMediaRemoteNowPlayingInfoDidChangeNotification;
+extern NSString *kMRMediaRemoteNowPlayingPlaybackQueueDidChangeNotification;
+extern NSString *kMRMediaRemotePickableRoutesDidChangeNotification;
+extern NSString *kMRMediaRemoteNowPlayingApplicationDidChangeNotification;
+extern NSString *kMRMediaRemoteNowPlayingApplicationIsPlayingDidChangeNotification;
+extern NSString *kMRMediaRemoteRouteStatusDidChangeNotification;
+extern NSString *kMRNowPlayingPlaybackQueueChangedNotification;
+extern NSString *kMRPlaybackQueueContentItemsChangedNotification;
+
+extern NSString *kMRMediaRemoteNowPlayingInfoArtist;
+extern NSString *kMRMediaRemoteNowPlayingInfoTitle;
+extern NSString *kMRMediaRemoteNowPlayingInfoAlbum;
+extern NSString *kMRMediaRemoteNowPlayingInfoArtworkData;
+extern NSString *kMRMediaRemoteNowPlayingInfoPlaybackRate;
+extern NSString *kMRMediaRemoteNowPlayingInfoDuration;
+extern NSString *kMRMediaRemoteNowPlayingInfoElapsedTime;
+extern NSString *kMRMediaRemoteNowPlayingInfoTimestamp;
+extern NSString *kMRMediaRemoteNowPlayingInfoClientPropertiesData;
+
+extern NSString *kMRMediaRemoteNowPlayingApplicationIsPlayingUserInfoKey;
+
+#endif /* PrivateMediaRemote_Constants_h */
