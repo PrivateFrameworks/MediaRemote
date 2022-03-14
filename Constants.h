@@ -20,6 +20,17 @@ extern NSString *kMRMediaRemoteNowPlayingInfoElapsedTime;
 extern NSString *kMRMediaRemoteNowPlayingInfoTimestamp;
 extern NSString *kMRMediaRemoteNowPlayingInfoClientPropertiesData;
 
+extern NSString *kMRActiveNowPlayingPlayerPathUserInfoKey;
+extern NSString *kMRMediaRemoteNowPlayingApplicationDisplayNameUserInfoKey;
 extern NSString *kMRMediaRemoteNowPlayingApplicationIsPlayingUserInfoKey;
+extern NSString *kMRMediaRemoteNowPlayingApplicationIsPlayingUserInfoKey;
+extern NSString *kMRMediaRemoteNowPlayingApplicationPIDUserInfoKey;
+extern NSString *kMRMediaRemoteOriginUserInfoKey;
+extern NSString *kMRMediaRemotePlaybackStateUserInfoKey;
+extern NSString *kMRMediaRemoteUpdatedContentItemsUserInfoKey;
+extern NSString *kMRNowPlayingClientUserInfoKey;
+extern NSString *kMRNowPlayingPlayerPathUserInfoKey;
+extern NSString *kMRNowPlayingPlayerUserInfoKey;
+extern NSString *kMROriginActiveNowPlayingPlayerPathUserInfoKey;
 
 #endif /* PrivateMediaRemote_Constants_h */
