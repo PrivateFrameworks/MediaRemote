@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "PrivateProtocolBuffer",
+        "repositoryURL": "https://github.com/PrivateFrameworks/ProtocolBuffer",
+        "state": {
+          "branch": null,
+          "revision": "20b692d09393389120bea65098ddf66129352bb7",
+          "version": "0.1.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
