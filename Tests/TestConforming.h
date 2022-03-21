@@ -6,11 +6,13 @@ BOOL Identifier(classConformsToProtocol)(Class classInstance, NSString *protocol
 }
 
 #define ClassConformsToProtocol(CLASS, PROTOCOL) Identifier(classConformsToProtocol)(GetClass(CLASS), @#PROTOCOL)
+#define UnlinkableClassConformsToProtocol(CLASS, PROTOCOL) Identifier(classConformsToProtocol)(GetUnlinkableClass(CLASS), @#PROTOCOL)
 
 #define TestClassConformsToProtocol(CLASS, PROTOCOL) XCTAssertTrue(ClassConformsToProtocol(CLASS, PROTOCOL))
+#define TestUnlinkableClassConformsToProtocol(CLASS, PROTOCOL) XCTAssertTrue(UnlinkableClassConformsToProtocol(CLASS, PROTOCOL))
 
 #define TestConforming \
-TestClassConformsToProtocol(_MRColorProtobuf, NSCopying); \
+TestUnlinkableClassConformsToProtocol(_MRColorProtobuf, NSCopying); \
 TestClassConformsToProtocol(_MRNowPlayingClientProtobuf, NSCopying); \
 
 

@@ -12,7 +12,7 @@ BOOL Identifier(isClassDefined)(Class classInstance, NSString *classString) {
 #define TestUnlinkableClass(CLASS) XCTAssertTrue(IsUnlinkableClassDefined(CLASS))
 
 #define TestClasses \
-TestClass(_MRColorProtobuf); \
+TestUnlinkableClass(_MRColorProtobuf); \
 TestClass(_MRNowPlayingClientProtobuf); \
 
 
