@@ -16,5 +16,6 @@
 #include "TestSelectors.h"
 #include "TestMethods.h"
 #include "TestConforming.h"
+#include "TestSuperclasses.h"
 
 #endif /* Common_h */

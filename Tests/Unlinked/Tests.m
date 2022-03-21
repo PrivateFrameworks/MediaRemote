@@ -14,6 +14,10 @@
 	TestClasses
 }
 
+- (void)testSuperclasses {
+    TestSuperclasses
+}
+
 - (void)testSelectors {
 	TestSelectors
 }
