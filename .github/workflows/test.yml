@@ -2,15 +2,20 @@ name: Test
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   test:
     runs-on: macos-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Play sounds
+        run: open /System/Library/Sounds/*
+
       - name: Run tests
         run: swift test -v

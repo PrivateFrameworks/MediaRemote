@@ -11,9 +11,18 @@ BOOL Identifier(isClassDefined)(Class classInstance, NSString *classString) {
 #define TestClass(CLASS) XCTAssertTrue(IsClassDefined(CLASS))
 #define TestUnlinkableClass(CLASS) XCTAssertTrue(IsUnlinkableClassDefined(CLASS))
 
+void Identifier(testClassesCatalina)() {
+	if (@available(macOS 10.15, *)) {
+		TestClass(MRClient);
+	}
+}
+
+#define TestClassesCatalina Identifier(testClassesCatalina)
+
 #define TestClasses \
-TestUnlinkableClass(_MRColorProtobuf); \
+TestClass(_MRColorProtobuf); \
 TestClass(_MRNowPlayingClientProtobuf); \
+TestClassesCatalina(); \
 
 
 #endif /* TestClasses_h */

@@ -1,12 +1,16 @@
 #ifndef PrivateMediaRemote_Functions_h
 #define PrivateMediaRemote_Functions_h
 
-#import "_MRNowPlayingClientProtobuf.h"
-
 void MRMediaRemoteRegisterForNowPlayingNotifications(dispatch_queue_t queue);
 void MRMediaRemoteUnregisterForNowPlayingNotifications(void);
-typedef void (^MRMediaRemoteGetNowPlayingClientCallback)(_MRNowPlayingClientProtobuf *client);
-void MRMediaRemoteGetNowPlayingClient(dispatch_queue_t queue, MRMediaRemoteGetNowPlayingClientCallback block);
+
+/// - Parameters:
+///   - queue: `dispatch_queue_t`
+///   - block:
+///     - Since macOS 10.15 it's `void (^)(MRClient *client)`.
+///     - Since macOS 10.12 it's `void (^)(_MRNowPlayingClientProtobuf *client)`.
+void MRMediaRemoteGetNowPlayingClient(dispatch_queue_t queue, void (^block)(id client));
+
 typedef void (^MRMediaRemoteGetNowPlayingInfoCallback)(NSDictionary *info);
 void MRMediaRemoteGetNowPlayingInfo(dispatch_queue_t queue, MRMediaRemoteGetNowPlayingInfoCallback block);
 typedef void (^MRMediaRemoteGetNowPlayingApplicationIsPlayingCallback)(BOOL isPlaying);

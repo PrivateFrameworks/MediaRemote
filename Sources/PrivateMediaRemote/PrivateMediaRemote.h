@@ -3,8 +3,9 @@
 
 #import <Foundation/Foundation.h>
 
-#import "_MRColorProtobuf.h"
-#import "_MRNowPlayingClientProtobuf.h"
+#import "Classes/_MRColorProtobuf.h"
+#import "Classes/_MRNowPlayingClientProtobuf.h"
+#import "Classes/MRClient.h"
 #import "Constants.h"
 #import "Enums.h"
 #import "Functions.h"
