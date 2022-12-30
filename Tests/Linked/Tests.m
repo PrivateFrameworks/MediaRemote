@@ -11,11 +11,11 @@
 }
 
 - (void)testClasses {
-	TestClasses
+	Identifier(testClasses)();
 }
 
 - (void)testSuperclasses {
-    TestSuperclasses
+	Identifier(testSuperclasses)();
 }
 
 - (void)testSelectors {
@@ -31,11 +31,11 @@
 }
 
 - (void)testConstants {
-	TestConstants
+	Identifier(testConstants)(self);
 }
 
 - (void)testFunctions {
-    TestFunctions
+	Identifier(testFunctions)(self);
 }
 
 @end

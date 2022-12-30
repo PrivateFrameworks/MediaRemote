@@ -4,6 +4,73 @@ targets:         [ x86_64-tvos-simulator, arm64-tvos-simulator ]
 install-name:    '/System/Library/PrivateFrameworks/MediaRemote.framework/MediaRemote'
 exports:
   - targets:         [ x86_64-tvos-simulator, arm64-tvos-simulator ]
-    symbols:         [ _MRMediaRemoteRegisterForNowPlayingNotifications, _MRMediaRemoteUnregisterForNowPlayingNotifications, _MRMediaRemoteGetNowPlayingClient, _MRMediaRemoteGetNowPlayingInfo, _MRMediaRemoteGetNowPlayingApplicationIsPlaying, _MRNowPlayingClientGetBundleIdentifier, _MRNowPlayingClientGetParentAppBundleIdentifier, _MRMediaRemoteSetElapsedTime, _MRMediaRemoteSendCommand, _kMRMediaRemoteNowPlayingInfoDidChangeNotification, _kMRMediaRemoteNowPlayingPlaybackQueueDidChangeNotification, _kMRMediaRemotePickableRoutesDidChangeNotification, _kMRMediaRemoteNowPlayingApplicationDidChangeNotification, _kMRMediaRemoteNowPlayingApplicationIsPlayingDidChangeNotification, _kMRMediaRemoteRouteStatusDidChangeNotification, _kMRNowPlayingPlaybackQueueChangedNotification, _kMRPlaybackQueueContentItemsChangedNotification, _kMRMediaRemoteNowPlayingInfoArtist, _kMRMediaRemoteNowPlayingInfoTitle, _kMRMediaRemoteNowPlayingInfoAlbum, _kMRMediaRemoteNowPlayingInfoArtworkData, _kMRMediaRemoteNowPlayingInfoPlaybackRate, _kMRMediaRemoteNowPlayingInfoDuration, _kMRMediaRemoteNowPlayingInfoElapsedTime, _kMRMediaRemoteNowPlayingInfoTimestamp, _kMRMediaRemoteNowPlayingInfoClientPropertiesData, _kMRMediaRemoteNowPlayingInfoArtworkIdentifier, _kMRMediaRemoteNowPlayingInfoShuffleMode, _kMRMediaRemoteNowPlayingInfoTrackNumber, _kMRMediaRemoteNowPlayingInfoTotalQueueCount, _kMRMediaRemoteNowPlayingInfoArtistiTunesStoreAdamIdentifier, _kMRMediaRemoteNowPlayingInfoArtworkMIMEType, _kMRMediaRemoteNowPlayingInfoMediaType, _kMRMediaRemoteNowPlayingInfoiTunesStoreSubscriptionAdamIdentifier, _kMRMediaRemoteNowPlayingInfoGenre, _kMRMediaRemoteNowPlayingInfoComposer, _kMRMediaRemoteNowPlayingInfoQueueIndex, _kMRMediaRemoteNowPlayingInfoiTunesStoreIdentifier, _kMRMediaRemoteNowPlayingInfoTotalTrackCount, _kMRMediaRemoteNowPlayingInfoContentItemIdentifier, _kMRMediaRemoteNowPlayingInfoIsMusicApp, _kMRMediaRemoteNowPlayingInfoAlbumiTunesStoreAdamIdentifier, _kMRMediaRemoteNowPlayingInfoUniqueIdentifier, _kMRActiveNowPlayingPlayerPathUserInfoKey, _kMRMediaRemoteNowPlayingApplicationIsPlayingUserInfoKey, _kMRMediaRemoteNowPlayingApplicationDisplayNameUserInfoKey, _kMRMediaRemoteNowPlayingApplicationPIDUserInfoKey, _kMRMediaRemoteOriginUserInfoKey, _kMRMediaRemotePlaybackStateUserInfoKey, _kMRMediaRemoteUpdatedContentItemsUserInfoKey, _kMRNowPlayingClientUserInfoKey, _kMRNowPlayingPlayerPathUserInfoKey, _kMRNowPlayingPlayerUserInfoKey, _kMROriginActiveNowPlayingPlayerPathUserInfoKey ]
-    objc-classes:    [ _MRColorProtobuf, _MRNowPlayingClientProtobuf, MRClient ]
+    symbols:
+     - _MRMediaRemoteRegisterForNowPlayingNotifications
+     - _MRMediaRemoteUnregisterForNowPlayingNotifications
+     - _MRMediaRemoteGetNowPlayingClient
+     - _MRMediaRemoteGetNowPlayingInfo
+     - _MRMediaRemoteGetNowPlayingApplicationIsPlaying
+     - _MRNowPlayingClientGetBundleIdentifier
+     - _MRNowPlayingClientGetParentAppBundleIdentifier
+     - _MRMediaRemoteSetElapsedTime
+     - _MRMediaRemoteSendCommand
+     - _MRMediaRemoteRequestNowPlayingPlaybackQueueForPlayerSync
+     - _kMRMediaRemoteNowPlayingInfoDidChangeNotification
+     - _kMRMediaRemoteNowPlayingPlaybackQueueDidChangeNotification
+     - _kMRMediaRemotePickableRoutesDidChangeNotification
+     - _kMRMediaRemoteNowPlayingApplicationDidChangeNotification
+     - _kMRMediaRemoteNowPlayingApplicationIsPlayingDidChangeNotification
+     - _kMRMediaRemoteRouteStatusDidChangeNotification
+     - _kMRNowPlayingPlaybackQueueChangedNotification
+     - _kMRPlaybackQueueContentItemsChangedNotification
+     - _kMRMediaRemoteNowPlayingInfoArtist
+     - _kMRMediaRemoteNowPlayingInfoTitle
+     - _kMRMediaRemoteNowPlayingInfoAlbum
+     - _kMRMediaRemoteNowPlayingInfoArtworkData
+     - _kMRMediaRemoteNowPlayingInfoPlaybackRate
+     - _kMRMediaRemoteNowPlayingInfoDuration
+     - _kMRMediaRemoteNowPlayingInfoElapsedTime
+     - _kMRMediaRemoteNowPlayingInfoTimestamp
+     - _kMRMediaRemoteNowPlayingInfoClientPropertiesData
+     - _kMRMediaRemoteNowPlayingInfoArtworkIdentifier
+     - _kMRMediaRemoteNowPlayingInfoShuffleMode
+     - _kMRMediaRemoteNowPlayingInfoTrackNumber
+     - _kMRMediaRemoteNowPlayingInfoTotalQueueCount
+     - _kMRMediaRemoteNowPlayingInfoArtistiTunesStoreAdamIdentifier
+     - _kMRMediaRemoteNowPlayingInfoArtworkMIMEType
+     - _kMRMediaRemoteNowPlayingInfoMediaType
+     - _kMRMediaRemoteNowPlayingInfoiTunesStoreSubscriptionAdamIdentifier
+     - _kMRMediaRemoteNowPlayingInfoGenre
+     - _kMRMediaRemoteNowPlayingInfoComposer
+     - _kMRMediaRemoteNowPlayingInfoQueueIndex
+     - _kMRMediaRemoteNowPlayingInfoiTunesStoreIdentifier
+     - _kMRMediaRemoteNowPlayingInfoTotalTrackCount
+     - _kMRMediaRemoteNowPlayingInfoContentItemIdentifier
+     - _kMRMediaRemoteNowPlayingInfoIsMusicApp
+     - _kMRMediaRemoteNowPlayingInfoAlbumiTunesStoreAdamIdentifier
+     - _kMRMediaRemoteNowPlayingInfoUniqueIdentifier
+     - _kMRActiveNowPlayingPlayerPathUserInfoKey
+     - _kMRMediaRemoteNowPlayingApplicationIsPlayingUserInfoKey
+     - _kMRMediaRemoteNowPlayingApplicationDisplayNameUserInfoKey
+     - _kMRMediaRemoteNowPlayingApplicationPIDUserInfoKey
+     - _kMRMediaRemoteOriginUserInfoKey
+     - _kMRMediaRemotePlaybackStateUserInfoKey
+     - _kMRMediaRemoteUpdatedContentItemsUserInfoKey
+     - _kMRNowPlayingClientUserInfoKey
+     - _kMRNowPlayingPlayerPathUserInfoKey
+     - _kMRNowPlayingPlayerUserInfoKey
+     - _kMROriginActiveNowPlayingPlayerPathUserInfoKey
+     - _kMRMediaRemoteFrameworkErrorDomain
+    objc-classes:
+     - _MRColorProtobuf
+     - _MRNowPlayingClientProtobuf
+     - MRClient
+     - MRArtwork
+     - MRContentItem
+     - MRContentItemMetadata
+     - MROrigin
+     - MRPlaybackQueue
+     - MRPlaybackQueueRequest
+     - MRPlayer
+     - MRPlayerPath
 ...

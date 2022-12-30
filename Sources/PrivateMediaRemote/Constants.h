@@ -49,4 +49,6 @@ extern NSString *kMRNowPlayingPlayerPathUserInfoKey;
 extern NSString *kMRNowPlayingPlayerUserInfoKey;
 extern NSString *kMROriginActiveNowPlayingPlayerPathUserInfoKey;
 
+extern NSString *kMRMediaRemoteFrameworkErrorDomain;
+
 #endif /* PrivateMediaRemote_Constants_h */
