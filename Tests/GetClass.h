@@ -9,4 +9,8 @@
 
 #define GetUnlinkableClass(CLASS) objc_getClass(#CLASS)
 
+BOOL i(classNameIs)(NSObject *object, NSString *string) {
+	return [NSStringFromClass(object.class) isEqualToString:string];
+}
+
 #endif /* GetClass_h */

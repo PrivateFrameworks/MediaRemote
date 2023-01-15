@@ -3,11 +3,20 @@
 
 #import <Foundation/Foundation.h>
 
-#import "_MRColorProtobuf.h"
-#import "_MRNowPlayingClientProtobuf.h"
-#import "Constants.h"
-#import "Enums.h"
-#import "Functions.h"
+#import <PrivateMediaRemote/_MRColorProtobuf.h>
+#import <PrivateMediaRemote/_MRNowPlayingClientProtobuf.h>
+#import <PrivateMediaRemote/MRClient.h>
+#import <PrivateMediaRemote/MRArtwork.h>
+#import <PrivateMediaRemote/MRContentItem.h>
+#import <PrivateMediaRemote/MRContentItemMetadata.h>
+#import <PrivateMediaRemote/MROrigin.h>
+#import <PrivateMediaRemote/MRPlaybackQueue.h>
+#import <PrivateMediaRemote/MRPlaybackQueueRequest.h>
+#import <PrivateMediaRemote/MRPlayer.h>
+#import <PrivateMediaRemote/MRPlayerPath.h>
+#import <PrivateMediaRemote/Constants.h>
+#import <PrivateMediaRemote/Enums.h>
+#import <PrivateMediaRemote/Functions.h>
 
 FOUNDATION_EXPORT double MediaRemoteVersionNumber;
 

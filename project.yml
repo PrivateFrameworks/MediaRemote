@@ -1,0 +1,145 @@
+name: PrivateMediaRemote
+projectReferences:
+  PrivateProtocolBuffer:
+    path: ProtocolBuffer/PrivateProtocolBuffer.xcodeproj
+targetTemplates:
+  ios:
+    platform: iOS
+    deploymentTarget: "8.0"
+  tvos:
+    platform: tvOS
+    deploymentTarget: "9.0"
+  watchos:
+    platform: watchOS
+    deploymentTarget: "2.0"
+  macos:
+    platform: macOS
+    deploymentTarget: "10.12"
+  protocolbuffer:
+    type: framework
+  framework:
+    type: framework
+    dependencies:
+      - framework: MediaRemote.xcframework/${platform}/MediaRemote.framework
+      - target: PrivateProtocolBuffer/PrivateProtocolBuffer ${platform}
+        embed: false
+    sources:
+      - Sources
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: private.mediaremote-${platform}
+      GENERATE_INFOPLIST_FILE: true
+      PRODUCT_MODULE_NAME: PrivateMediaRemote
+      PRODUCT_NAME: PrivateMediaRemote
+    testTargets:
+      - Linked tests ${platform}
+      - Unlinked tests ${platform}
+  tests:
+    type: bundle.unit-test
+    dependencies:
+      - target: PrivateMediaRemote ${platform}
+        embed: false
+    sources:
+      - path: Tests
+        excludes:
+          - Linked
+          - Unlinked
+    settings:
+      GENERATE_INFOPLIST_FILE: true
+  linked tests:
+    sources:
+      - Tests/Linked
+    dependencies:
+      - framework: MediaRemote.xcframework/${platform}/MediaRemote.framework
+        embed: false
+      - framework: ProtocolBuffer/ProtocolBuffer.xcframework/${platform}/ProtocolBuffer.framework
+        embed: false
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: private.mediaremote-${platform}.linked-tests
+      GCC_PREPROCESSOR_DEFINITIONS: LINKED_TESTS
+  unlinked tests:
+    sources:
+      - Tests/Unlinked
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: private.mediaremote-${platform}.unlinked-tests
+      GCC_PREPROCESSOR_DEFINITIONS: UNLINKED_TESTS
+targets:
+  PrivateMediaRemote ios:
+    templates:
+      - ios
+      - framework
+    templateAttributes:
+      platform: ios
+  Linked tests ios:
+    templates:
+      - ios
+      - tests
+      - linked tests
+    templateAttributes:
+      platform: ios
+  Unlinked tests ios:
+    templates:
+      - ios
+      - tests
+      - unlinked tests
+    templateAttributes:
+      platform: ios
+  PrivateMediaRemote tvos:
+    templates:
+      - tvos
+      - framework
+    templateAttributes:
+      platform: tvos
+  Linked tests tvos:
+    templates:
+      - tvos
+      - tests
+      - linked tests
+    templateAttributes:
+      platform: tvos
+  Unlinked tests tvos:
+    templates:
+      - tvos
+      - tests
+      - unlinked tests
+    templateAttributes:
+      platform: tvos
+  PrivateMediaRemote watchos:
+    templates:
+      - watchos
+      - framework
+    templateAttributes:
+      platform: watchos
+  Linked tests watchos:
+    templates:
+      - watchos
+      - tests
+      - linked tests
+    templateAttributes:
+      platform: watchos
+  Unlinked tests watchos:
+    templates:
+      - watchos
+      - tests
+      - unlinked tests
+    templateAttributes:
+      platform: watchos
+  PrivateMediaRemote macos:
+    templates:
+      - macos
+      - framework
+    templateAttributes:
+      platform: macos
+  Linked tests macos:
+    templates:
+      - macos
+      - tests
+      - linked tests
+    templateAttributes:
+      platform: macos
+  Unlinked tests macos:
+    templates:
+      - macos
+      - tests
+      - unlinked tests
+    templateAttributes:
+      platform: macos

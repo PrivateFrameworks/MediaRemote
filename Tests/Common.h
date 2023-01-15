@@ -6,8 +6,8 @@
 @import PrivateMediaRemote;
 
 #include "SetUp.h"
-#include "GetClass.h"
 #include "Identifier.h"
+#include "GetClass.h"
 #include "Interface.h"
 #include "TearDown.h"
 #include "TestClasses.h"

@@ -11,9 +11,10 @@ BOOL Identifier(checkSuperclass)(Class classInstance, Class superclassInstance) 
 #define TestSuperclass(CLASS, SUPERCLASS) XCTAssertTrue(CheckSuperclass(CLASS, SUPERCLASS))
 #define TestUnlinkableSuperclass(CLASS, SUPERCLASS) XCTAssertTrue(CheckUnlinkableSuperclass(CLASS, SUPERCLASS))
 
-#define TestSuperclasses \
-TestUnlinkableSuperclass(_MRColorProtobuf, PBCodable); \
-TestSuperclass(_MRNowPlayingClientProtobuf, PBCodable); \
-
+void i(testSuperclasses)(void);
+void i(testSuperclasses)() {
+	TestUnlinkableSuperclass(_MRColorProtobuf, PBCodable);
+	TestSuperclass(_MRNowPlayingClientProtobuf, PBCodable);
+}
 
 #endif /* TestSuperclasses_h */

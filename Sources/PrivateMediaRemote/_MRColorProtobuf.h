@@ -29,6 +29,8 @@
 - (unsigned long long)hash;
 - (id)description;
 - (void)mergeFrom:(id)arg1;
+- (void)writeTo:(id)arg1;
+- (BOOL)readFrom:(id)arg1;
 - (void)copyTo:(id)arg1;
 
 @end
