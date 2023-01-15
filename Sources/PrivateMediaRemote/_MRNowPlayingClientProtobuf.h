@@ -3,7 +3,7 @@
 
 #include <PrivateProtocolBuffer/PrivateProtocolBuffer.h>
 
-#include "_MRColorProtobuf.h"
+#include <PrivateMediaRemote/_MRColorProtobuf.h>
 
 @interface _MRNowPlayingClientProtobuf : PBCodable <NSCopying> {
 	NSString *_bundleIdentifier;

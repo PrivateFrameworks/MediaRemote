@@ -3,9 +3,9 @@
 
 #import <os/availability.h>
 
-#include "_MRNowPlayingClientProtobuf.h"
+#include <PrivateMediaRemote/_MRNowPlayingClientProtobuf.h>
 
-API_AVAILABLE(macos(10.15))
+API_AVAILABLE(ios(14), tvos(14), watchos(7), macos(10.15))
 @interface MRClient : NSObject {
 	NSString *_bundleIdentifier;
 }

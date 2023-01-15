@@ -22,10 +22,10 @@ void Identifier(getNowPlayingClient)(Identifier(Tests) *self) {
 	(*func)(dispatch_get_main_queue(), ^(id client) {
 		XCTAssertNotNil(client, @"`client` is `nil` when calling `MRMediaRemoteGetNowPlayingClient`. Play some music for this test to pass.");
 		
-		if (@available(macOS 10.15, *)) {
-			XCTAssertTrue([((NSObject *)client).className isEqualToString:@"MRClient"]);
+		if (@available(macOS 10.15, iOS 14, tvOS 14, watchOS 7, *)) {
+			XCTAssertTrue(i(classNameIs)(client, @"MRClient"));
 		} else {
-			XCTAssertTrue([((NSObject *)client).className isEqualToString:@"_MRNowPlayingClientProtobuf"]);
+			XCTAssertTrue(i(classNameIs)(client, @"_MRNowPlayingClientProtobuf"));
 		}
 		
 		[expectation fulfill];
@@ -48,10 +48,10 @@ void Identifier(requestNowPlayingPlaybackQueueForPlayerSync)(Identifier(Tests) *
 		XCTAssertNotNil(queue, @"`queue` is `nil` when calling `MRMediaRemoteRequestNowPlayingPlaybackQueueForPlayerSync`. Play some music for this test to pass.");
 		XCTAssertNil(error);
 		
-		if (@available(macOS 11.0, *)) {
-			XCTAssertTrue([((NSObject *)queue).className isEqualToString:@"MRPlaybackQueue"]);
+		if (@available(iOS 15, tvOS 15, watchOS 8, macOS 11.0, *)) {
+			XCTAssertTrue(i(classNameIs)(queue, @"MRPlaybackQueue"));
 		} else {
-			XCTAssertTrue([((NSObject *)queue).className isEqualToString:@"_MRPlaybackQueueProtobuf"]);
+			XCTAssertTrue(i(classNameIs)(queue, @"_MRPlaybackQueueProtobuf"));
 		}
 		
 		[expectation fulfill];

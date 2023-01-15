@@ -1,7 +1,7 @@
 #ifndef PrivateMediaRemote_MRPlaybackQueueRequest_h
 #define PrivateMediaRemote_MRPlaybackQueueRequest_h
 
-API_AVAILABLE(macos(10.15))
+API_AVAILABLE(ios(14), tvos(14), watchos(7), macos(10.15))
 @interface MRPlaybackQueueRequest : NSObject {
 	double _artworkHeight;
 	double _artworkWidth;

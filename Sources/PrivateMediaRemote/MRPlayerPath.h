@@ -1,11 +1,11 @@
 #ifndef PrivateMediaRemote_MRPlayerPath_h
 #define PrivateMediaRemote_MRPlayerPath_h
 
-#import "MROrigin.h"
-#import "MRClient.h"
-#import "MRPlayer.h"
+#import <PrivateMediaRemote/MROrigin.h>
+#import <PrivateMediaRemote/MRClient.h>
+#import <PrivateMediaRemote/MRPlayer.h>
 
-API_AVAILABLE(macos(10.15))
+API_AVAILABLE(ios(14), tvos(14), watchos(7), macos(10.15))
 @interface MRPlayerPath : NSObject {
 	MROrigin *_origin;
 	MRClient *_client;

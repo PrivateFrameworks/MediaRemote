@@ -1,7 +1,7 @@
 #ifndef PrivateMediaRemote_MRArtwork_h
 #define PrivateMediaRemote_MRArtwork_h
 
-API_AVAILABLE(macos(10.15))
+API_AVAILABLE(ios(14), tvos(14), watchos(7), macos(10.15))
 @interface MRArtwork : NSObject {
 	NSData *_imageData;
 	long long _width;

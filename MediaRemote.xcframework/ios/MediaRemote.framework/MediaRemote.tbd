@@ -1,9 +1,9 @@
---- !tapi-tbd
-tbd-version:     4
-targets:         [ x86_64-macos, arm64-macos, armv7-ios ]
-install-name:    '/System/Library/PrivateFrameworks/MediaRemote.framework/MediaRemote'
+---
+archs:            [ x86_64, arm64 ]
+platform:         ios
+install-name:     '/System/Library/PrivateFrameworks/MediaRemote.framework/MediaRemote'
 exports:
-  - targets:         [ x86_64-macos, arm64-macos, armv7-ios ]
+  - archs:        [ x86_64, arm64 ]
     symbols:
      - _MRMediaRemoteRegisterForNowPlayingNotifications
      - _MRMediaRemoteUnregisterForNowPlayingNotifications
@@ -62,15 +62,15 @@ exports:
      - _kMROriginActiveNowPlayingPlayerPathUserInfoKey
      - _kMRMediaRemoteFrameworkErrorDomain
     objc-classes:
-     - _MRColorProtobuf
-     - _MRNowPlayingClientProtobuf
-     - MRClient
-     - MRArtwork
-     - MRContentItem
-     - MRContentItemMetadata
-     - MROrigin
-     - MRPlaybackQueue
-     - MRPlaybackQueueRequest
-     - MRPlayer
-     - MRPlayerPath
+     - __MRColorProtobuf
+     - __MRNowPlayingClientProtobuf
+     - _MRClient
+     - _MRArtwork
+     - _MRContentItem
+     - _MRContentItemMetadata
+     - _MROrigin
+     - _MRPlaybackQueue
+     - _MRPlaybackQueueRequest
+     - _MRPlayer
+     - _MRPlayerPath
 ...

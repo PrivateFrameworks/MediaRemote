@@ -1,9 +1,9 @@
---- !tapi-tbd
-tbd-version:     4
-targets:         [ armv7k-watchos, arm64_32-watchos ]
-install-name:    '/System/Library/PrivateFrameworks/MediaRemote.framework/MediaRemote'
+---
+archs:            [ x86_64, arm64, i386, armv7, armv7s ]
+platform:         watchos
+install-name:     '/System/Library/PrivateFrameworks/MediaRemote.framework/MediaRemote'
 exports:
-  - targets:         [ armv7k-watchos, arm64_32-watchos ]
+  - archs:        [ x86_64, arm64, i386, armv7, armv7s ]
     symbols:
      - _MRMediaRemoteRegisterForNowPlayingNotifications
      - _MRMediaRemoteUnregisterForNowPlayingNotifications
@@ -62,15 +62,15 @@ exports:
      - _kMROriginActiveNowPlayingPlayerPathUserInfoKey
      - _kMRMediaRemoteFrameworkErrorDomain
     objc-classes:
-     - _MRColorProtobuf
-     - _MRNowPlayingClientProtobuf
-     - MRClient
-     - MRArtwork
-     - MRContentItem
-     - MRContentItemMetadata
-     - MROrigin
-     - MRPlaybackQueue
-     - MRPlaybackQueueRequest
-     - MRPlayer
-     - MRPlayerPath
+     - __MRColorProtobuf
+     - __MRNowPlayingClientProtobuf
+     - _MRClient
+     - _MRArtwork
+     - _MRContentItem
+     - _MRContentItemMetadata
+     - _MROrigin
+     - _MRPlaybackQueue
+     - _MRPlaybackQueueRequest
+     - _MRPlayer
+     - _MRPlayerPath
 ...

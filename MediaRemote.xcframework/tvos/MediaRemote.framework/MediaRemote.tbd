@@ -1,9 +1,9 @@
---- !tapi-tbd
-tbd-version:     4
-targets:         [ arm64-tvos ]
-install-name:    '/System/Library/PrivateFrameworks/MediaRemote.framework/MediaRemote'
+---
+archs:            [ x86_64, arm64 ]
+platform:         tvos
+install-name:     '/System/Library/PrivateFrameworks/MediaRemote.framework/MediaRemote'
 exports:
-  - targets:         [ arm64-tvos ]
+  - archs:        [ x86_64, arm64 ]
     symbols:
      - _MRMediaRemoteRegisterForNowPlayingNotifications
      - _MRMediaRemoteUnregisterForNowPlayingNotifications
@@ -62,15 +62,15 @@ exports:
      - _kMROriginActiveNowPlayingPlayerPathUserInfoKey
      - _kMRMediaRemoteFrameworkErrorDomain
     objc-classes:
-     - _MRColorProtobuf
-     - _MRNowPlayingClientProtobuf
-     - MRClient
-     - MRArtwork
-     - MRContentItem
-     - MRContentItemMetadata
-     - MROrigin
-     - MRPlaybackQueue
-     - MRPlaybackQueueRequest
-     - MRPlayer
-     - MRPlayerPath
+     - __MRColorProtobuf
+     - __MRNowPlayingClientProtobuf
+     - _MRClient
+     - _MRArtwork
+     - _MRContentItem
+     - _MRContentItemMetadata
+     - _MROrigin
+     - _MRPlaybackQueue
+     - _MRPlaybackQueueRequest
+     - _MRPlayer
+     - _MRPlayerPath
 ...
